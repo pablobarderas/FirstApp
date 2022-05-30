@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         maps()
     }
 
+    // Functions
+
     private fun variablesYconstantes(){
         // Variables
         var myFirstVariable = "Hello Android"
@@ -185,6 +187,7 @@ class MainActivity : AppCompatActivity() {
         myMap = mapOf("Pablo" to 1, "Barderas" to 2)
 
         println(myMap)
+
     }
 }
 
