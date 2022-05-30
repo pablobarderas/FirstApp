@@ -179,9 +179,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun maps(){
 
-        // Sintaxis (Mapa o diccionario, seleccionando el tipo de dato de la
-        // clave y a continuación del contenido asociado a la misma)
-        var myMap: Map<String,Int> = mapOf()
+        // Sintaxis (Mapa o diccionario, seleccionando el tipo
+        // dato del contenido y a continuación del id asociado al misma)
+        var myMap: Map<String, Int>
 
         // Añadir elementos (Se puede hacer también cuando se crea)
         myMap = mapOf("Pablo" to 1, "Barderas" to 2)
