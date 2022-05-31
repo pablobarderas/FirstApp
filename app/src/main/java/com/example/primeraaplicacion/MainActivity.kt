@@ -184,9 +184,10 @@ class MainActivity : AppCompatActivity() {
         var myMap: Map<String, Int>
 
         // Añadir elementos (Se puede hacer también cuando se crea)
-        myMap = mapOf("Pablo" to 1, "Barderas" to 2)
+        myMap = mapOf("Pablo" to 1, "Barderas" to 2, "Ubuntu" to 3)
 
         println(myMap["Barderas"])
+        println(myMap["Ubuntu"])
         println(myMap)
 
     }
