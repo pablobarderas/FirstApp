@@ -184,15 +184,15 @@ class MainActivity : AppCompatActivity() {
 
         // Sintaxis (Mapa o diccionario, seleccionando el tipo
         // dato del contenido y a continuación del id asociado al misma)
-        var myMap: Map<String, Int>
 
         // Añadir elementos (Se puede hacer también cuando se crea)
-        myMap = mapOf("Pablo" to 1, "Barderas" to 2, "Ubuntu" to 3)
+        val myMap: Map<String, Int> = mapOf("Pablo" to 1, "Barderas" to 2, "Ubuntu" to 3)
 
         println(myMap["Barderas"])
         println(myMap["Ubuntu"])
         println(myMap)
 
     }
+
 }
 
