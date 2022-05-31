@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         // Lección 6
         //maps()
+
+        // Lección 7
+        //loops()
     }
 
     // Functions
@@ -211,6 +214,59 @@ class MainActivity : AppCompatActivity() {
         // Eliminar un dato
         myMap.remove("Windows")
         println(myMap)
+    }
+
+    private fun loops(){
+
+        // Bucles
+
+        val myArray = listOf<String>("Buenas", "Estoy aprendiendo Kotlin")
+        val myMap = mutableMapOf<String,Int>("Pablo" to 1, "Barderas" to 2, "Fernández" to 3)
+
+        // For
+
+        for (myString in myArray){
+            println(myString)
+        }
+
+        for (myElement in myMap){
+            println("${myElement.key}-${myElement.value}")
+        }
+
+        // Recorre del 0 hasta el 10
+        for (x in 0..10){
+            println(x)
+        }
+
+        // Recorre del 0 hasta el 9
+        for (x in 0 until 10){
+            println(x)
+        }
+
+        // Recorre de dos en dos
+        for (x in 0..10 step 2){
+            println(x)
+        }
+
+        // Recorre de froma inversa y de dos en dos
+        for (c in 10 downTo 0 step 2){
+            println(c)
+        }
+
+        // Array que contiene un rango de números
+        val myNumericArray = (0..20)
+        for (i in myNumericArray){
+            println(i)
+        }
+
+        // While
+
+        var x = 0
+
+        while (x < 10) {
+            println(x)
+            x += 2
+        }
     }
 
 }
