@@ -186,6 +186,7 @@ class MainActivity : AppCompatActivity() {
         // Añadir elementos (Se puede hacer también cuando se crea)
         myMap = mapOf("Pablo" to 1, "Barderas" to 2)
 
+        println(myMap["Barderas"])
         println(myMap)
 
     }
