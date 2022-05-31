@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         //arrays()
 
         // Lección 6
-        maps()
+        //maps()
     }
 
     // Functions
@@ -185,13 +185,32 @@ class MainActivity : AppCompatActivity() {
         // Sintaxis (Mapa o diccionario, seleccionando el tipo
         // dato del contenido y a continuación del id asociado al misma)
 
-        // Añadir elementos (Se puede hacer también cuando se crea)
-        val myMap: Map<String, Int> = mapOf("Pablo" to 1, "Barderas" to 2, "Ubuntu" to 3)
+        // Crear y añadir elementos (Se puede hacer también cuando se crea)
+        var myMap: Map<String, Int> = mapOf()
+
+        // Añadir elementos con mutable que indica que se podrán añadir más
+        myMap = mutableMapOf("Pablo" to 1, "Barderas" to 2, "Ubuntu" to 3)
 
         println(myMap["Barderas"])
         println(myMap["Ubuntu"])
         println(myMap)
 
+        // Añadir un solo valor (Dos formas diferentes)
+        // No puede haber claves repetidas pero si valores repetidos
+        myMap["Ana"] = 4
+        myMap.put("Windows", 5)
+        println(myMap)
+
+        // Acceso a un dato
+        println(myMap["Windows"])
+
+        // Actualización de un dato
+        myMap.put("Barderas", 25)
+        println(myMap["Barderas"])
+
+        // Eliminar un dato
+        myMap.remove("Windows")
+        println(myMap)
     }
 
 }
