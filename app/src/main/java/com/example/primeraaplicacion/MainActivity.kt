@@ -126,6 +126,7 @@ class MainActivity : AppCompatActivity() {
 
         // Crear un array
         val myArray = arrayListOf<String>()
+        val arrayUbuntu = arrayListOf<String>()
 
         // Añadir datos de uno en uno
         myArray.add(name)
@@ -137,6 +138,7 @@ class MainActivity : AppCompatActivity() {
 
         // Añadir un conjunto de datos
         myArray.addAll(listOf("Hola", "Cómo te va"))
+        arrayUbuntu.addAll(listOf("Portatil rojo", "Portatil gris"))
 
         println(myArray)
 
@@ -162,6 +164,7 @@ class MainActivity : AppCompatActivity() {
 
         // Otras operaciones
         val numElements = myArray.count() // Cuenta los elementos del Array
+
         println(numElements)
 
         myArray.clear() // Vacía el array
@@ -184,9 +187,10 @@ class MainActivity : AppCompatActivity() {
         var myMap: Map<String, Int>
 
         // Añadir elementos (Se puede hacer también cuando se crea)
-        myMap = mapOf("Pablo" to 1, "Barderas" to 2)
+        myMap = mapOf("Pablo" to 1, "Barderas" to 2, "Ubuntu" to 3)
 
         println(myMap["Barderas"])
+        println(myMap["Ubuntu"])
         println(myMap)
 
     }
