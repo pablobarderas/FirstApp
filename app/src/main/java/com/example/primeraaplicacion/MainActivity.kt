@@ -1,6 +1,12 @@
 package com.example.primeraaplicacion
 
-fun main(){
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
         // Lección 1
         //variablesYconstantes()
@@ -22,10 +28,7 @@ fun main(){
 
         // Lección 7
         //loops()
-
-        // Lección 8
-        //nullSafety()
-}
+    }
 
     // Functions
 
@@ -266,22 +269,5 @@ fun main(){
         }
     }
 
-    private fun nullSafety(){
-
-        var myString = "Pablo"
-        // myString = null --> Esto daría error de compilación
-
-        // Variable null safety
-        var mySafetyString: String? = "Pablo null safety"
-        mySafetyString = null
-        println(mySafetyString)
-
-        // Safe calls (El interrogante sirve para, en el caso de que sea null, no ejecute
-        // lo que viene a continuación)
-        mySafetyString = "Pablo"
-
-        print(mySafetyString?.length)
-    }
-
-
+}
 
