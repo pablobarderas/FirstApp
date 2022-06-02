@@ -24,6 +24,9 @@ package com.example.primeraaplicacion
 
         // Lección 8
         //nullSafety()
+
+        // Lección 9
+        functions()
     }
 
     // Functions
@@ -282,4 +285,37 @@ package com.example.primeraaplicacion
         print(mySafetyString?.length)
     }
 
+    // Functions
 
+    private fun functions(){
+        sayHello()
+        sayHello()
+        sayHello()
+
+        sayMyName("Pablo")
+        sayMyNameAndAge("Pablo Barderas", 21)
+
+        val sumResult = sum(1,2)
+        println("Result: $sumResult")
+        println(sum(2, sum(1,1)))
+    }
+
+    // Symple
+    private fun sayHello(){
+        println("Hola!!")
+    }
+
+    // Functions with input parameter
+    private fun sayMyName(name: String){
+        println("My name is $name")
+    }
+
+    private fun sayMyNameAndAge(name: String, age: Int){
+        println("My name is $name and \n" +
+                "I have $age years old")
+    }
+
+    // Functions with return
+    private fun sum(num1: Int, num2: Int):Int{
+        return num1+num2
+    }
