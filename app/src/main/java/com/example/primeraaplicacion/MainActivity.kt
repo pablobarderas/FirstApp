@@ -272,6 +272,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun nullSafety(){
 
+        var myString = "Pablo"
+        // myString = null --> Esto daría error de compilación
+
+        // Variable null safety
+        var mySafetyString: String? = "Pablo null safety"
+        mySafetyString = null
+        println(mySafetyString)
+
+        // Safe calls (El interrogante sirve para, en el caso de que sea null, no ejecute
+        // lo que viene a continuación)
+        mySafetyString = "Pablo"
+
+        print(mySafetyString?.length)
+    }
 }
 
