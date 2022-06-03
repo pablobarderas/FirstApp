@@ -26,10 +26,13 @@ package com.example.primeraaplicacion
         //nullSafety()
 
         // Lección 9
-        functions()
+        //functions()
+
+        // Lección 10
+        classes()
     }
 
-    // Functions
+    // All functions
 
     private fun variablesYconstantes(){
         // Variables
@@ -318,4 +321,20 @@ package com.example.primeraaplicacion
     // Functions with return
     private fun sum(num1: Int, num2: Int):Int{
         return num1+num2
+    }
+
+    private fun classes(){
+
+        val vicky = Programmer("Vicky", 17, arrayOf(Programmer.Language.JAVA, Programmer.Language.KOTLIN))
+        val pablo = Programmer("Pablo",21, arrayOf(Programmer.Language.JAVASCRIPT, Programmer.Language.SWIFT), arrayOf(vicky))
+        println(pablo.name)
+        println(pablo.code())
+        println(vicky.name)
+        println(vicky.code())
+
+        println("\n${pablo.friends?.first()?.name} es la novia de ${pablo.name}")
+        //pablo.age=20 No se puede porque es constante (val)
+
+
+
     }
